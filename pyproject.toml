@@ -1,0 +1,38 @@
+[project]
+name = 'pyopml'
+version = '1.0.0'
+requires-python  = ">=3.6.0"
+description = "Python package meant to read, manipulate and write OPML 2.0 files"
+readme = 'README.md'
+license = { file="LICENSE.md" }
+authors = [
+    { name='Maxime "Epoc" G.', email='contact.nospam@epoc.nospam.fr' },
+]
+classifiers = [ 
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Libraries',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+]
+dependencies = [
+    "lxml>=4.6",
+]
+
+
+[project.urls]
+Repository="http://github.com/EpocDotFr/pyopml"
+Documentation="https://epocdotfr.github.io/pyopml/"
+
+
+[project.optional-dependencies]
+dev = [
+   "build",
+   "twine",
+   "pytest",
+   "Sphinx",
+]
